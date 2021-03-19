@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="success">
+
+    <ion-title>Asas Jawi</ion-title>
+
+    <ion-buttons slot="start"   >
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content fullscreen class="ion-padding" scroll-y="false" >
+    <ion-slides options="options" slider="data.slider">
+
+     
+      <ion-slide >
+        
+         <ion-card-content  expand="block" fill="clear"  [routerLink]="['/ajnabi']"  >
+           <img src="assets/asas.jpg"/>
+          <ion-card-header>
+            <ion-card-title color="danger"> <h1>حروف اجنبي</h1> </ion-card-title>
+            
+          </ion-card-header>
+          <ion-text >Huruf yang tidak boleh disambung dalam kategori yang sama<br>.
+            Tetapi boleh disambung dengan huruf mahram</ion-text>
+         </ion-card-content>
+
+      </ion-slide>
+
+  
+      
+      <ion-slide>
+
+        <ion-card-content  expand="block" fill="clear"  [routerLink]="['/mahram']" >           
+          <img src="assets/asas.jpg"/>
+           <ion-card-header>
+             <ion-card-title color="danger"> <h1>حروف مهرام</h1> </ion-card-title>
+            </ion-card-header>        
+          <ion-text >Boleh disambung sesama huruf mahram manakala<br> Ajnabi jika berada dihadapan huruf tersebut. </ion-text>         
+        </ion-card-content>
+        
+      </ion-slide>
+
+      <ion-slide>
+
+      <ion-card-content  expand="block" fill="clear"  [routerLink]="['/tunggal']" >         
+          <img src="assets/asas.jpg"/>
+                <ion-card-header>
+           <ion-card-title color="danger"> <h1>حروف توڠڬل</h1> </ion-card-title>
+                </ion-card-header>        
+            <ion-text ><p>Tidak boleh disambung dengan semua huruf. </p></ion-text>          
+       </ion-card-content>
+        
+      </ion-slide>
+
+      
+
+    </ion-slides>
+  </ion-content>
